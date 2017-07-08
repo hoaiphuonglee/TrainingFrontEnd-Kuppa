@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/stype.css">
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<title>Destination</title>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="header-top">
+				<div class="row">
+					<div class="user pull-right">
+						<span class="user-login">
+							<!-- Single button -->
+							<div class="btn-group">
+								<button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<a href="#"><i class="fa fa-lock" aria-hidden="true"></i> Login</a>
+								</button>
+								<ul id="login-dp" class="dropdown-menu">
+									<li>
+										<div class="social-buttons">
+											<a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
+											<a href="#" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
+										</div>
+										<form>
+											<div class="form-group">
+												<label for="exampleInputEmail1">Account name</label>
+												<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+											</div>
+											<div class="form-group">
+												<label for="exampleInputPassword1">Password</label>
+												<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+											</div>
+											<div class="form-group">
+												<label for="exampleInputPassword1">Confirm your password</label>
+												<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+											</div>
+											<div class="checkbox">
+												<label>
+													<input type="checkbox"> Tôi không phải người máy
+												</label>
+											</div>
+											<button type="submit" class="btn btn-primary">Add</button>
+										</form>
+									</li>
+								</ul>
+							</div>
+							<a href="user/login.html"><i class="fa fa-user" aria-hidden="true"></i> Sign Up</a>
+						</span>
+						<span class="user-fb">
+							<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><span><i class="fa fa-facebook-official" aria-hidden="true"></i></span></button>
+							<div id="id01" class="modal">
+								<form class="modal-content animate" action="/action_page.php">
+									<div class="imgcontainer">
+										<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+										<h1>Log in Facebook</h1>
+									</div>
+									<div class="container">
+										<label><b>Emai or Number phone</b></label>
+										<input type="text" placeholder="Emai or Number phone" name="uname" required>
+
+										<label><b>Password</b></label>
+										<input type="password" placeholder="Enter Password" name="psw" required>
+										<input type="checkbox" checked="checked"> Remember me
+										<button type="submit">Login</button>
+									</div>
+									<div class="container" style="background-color:#f1f1f1">
+										<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+										<span class="psw">Forgot <a href="#">password?</a></span>
+									</div>
+								</form>
+							</div>
+							<span class="google-plus"><i class="fa fa-google-plus" aria-hidden="true"></i></span>
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+			<div class="header-menu">
+				<nav class="navbar navbar-default">
+					<div class="container-fluid">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<div class="logo">
+								<a href="#">
+									<img class="pull-left" src="img/logo.png" alt="Logo">
+									<div>
+										<h1>Kuppa</h1>
+										<p class="text-transform">Taste from our heart</p>
+									</div>
+								</a>
+							</div>
+						</div>
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse text-transform" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav">
+								<li class="active"><a href="#">Becom a host <span class="sr-only">(current)</span></a></li>
+								<li><a href="#">How it works?</a></li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Help <span class="caret"></span></a>
+									<ul class="dropdown-menu">
+										<li><a href="#Enjoy">Action</a></li>
+										<li><a href="#">Another action</a></li>
+										<li><a href="#">Something else here</a></li>
+										<li role="separator" class="divider"></li>
+										<li><a href="#">Separated link</a></li>
+										<li role="separator" class="divider"></li>
+										<li><a href="#">One more separated link</a></li>
+									</ul>
+								</li>
+								<li><a href="#">About us</a></li>
+								<li><a href="#">Free Meal</a></li>
+								<li><a href="#">Give a gift</a></li>
+							</ul>
+							<ul id="navbar-nav" class="nav navbar-nav navbar-right">
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-search" aria-hidden="true"></i> seach </a>
+									<ul class="dropdown-menu">
+										<form class="navbar-form navbar-left" role="search">
+											<div class="form-group">
+												<input type="text" class="form-control" placeholder="Search">
+											</div>
+											<button type="submit" class="btn btn-primary"><i class="fa fa-search" aria-hidden="true"></i></button>
+										</form>
+									</ul>
+								</li>
+							</ul>
+							<div class="clearfix"></div>
+							<form class="form-inline">
+								<div class="form-group">
+									<label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
+									<div class="input-group">
+										<input type="text" class="form-control" id="exampleInputAmount" placeholder="Search...">
+									</div>
+								</div>
+								<button type="submit" class="btn btn-primary"><i class="fa fa-search" aria-hidden="true"></i></button>
+							</form>
+						</div><!-- /.navbar-collapse -->
+					</div><!-- /.container-fluid -->
+				</nav>
+			</div>
+			<!-- header-menu -->
+			<div class="clearfix"></div>
+			<div class="header-content">
+				<div class="content-top">
+					<div class="container-fluid">
+						<div class="row">
+							<img class="col-sm-2 col-xs-6" src="img/header/img1.jpg" alt="img1">
+							<img class="col-sm-2 col-xs-6" src="img/header/img2.png" alt="img1">
+							<img class="col-sm-2 col-xs-6" src="img/header/img3.png" alt="img1">
+							<img class="col-sm-2 col-xs-6" src="img/header/img4.png" alt="img1">
+							<img class="col-sm-2 col-xs-6" src="img/header/img5.png" alt="img1">
+							<img class="col-sm-2 col-xs-6" src="img/header/img6.png" alt="img1">
+						</div>
+					</div>
+				</div>
+				<div class="content-center">
+					<div class="container-fluid">
+						<div class="row">
+							<img class="col-sm-2 col-xs-6 " src="img/header/img14.png" alt="img1">
+							<img class="col-sm-2 col-xs-6 pull-right" src="img/header/img7.png" alt="img1">
+							<div class="content col-sm-8 col-xs-12">
+								<p>Discover Vietnamese Cuisines</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="content-top">
+					<div class="container-fluid">
+						<div class="row">
+							<img class="col-sm-2 col-xs-6" src="img/header/img13.png" alt="img1">
+							<img class="col-sm-2 col-xs-6" src="img/header/img12.png" alt="img1">
+							<img class="col-sm-2 col-xs-6" src="img/header/img11.png" alt="img1">
+							<img class="col-sm-2 col-xs-6" src="img/header/img10.png" alt="img1">
+							<img class="col-sm-2 col-xs-6" src="img/header/img9.png" alt="img1">
+							<img class="col-sm-2 col-xs-6" src="img/header/img8.png" alt="img1">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section id="Enjoy" class="Enjoy container">
+		<article class="content">
+			<div class="content-top">
+				<div>
+					<span>Enjoy</span>
+					<span>the homemade food of Vietnam</span>
+					</div>
+					<div>
+					<p>Here are some of the best home-cooked dishes that you don’t typically find in restaurants. View our hosts below with whom</p>
+					<p>you can share these authentic Vietnamese foods.</p>
+				</div>
+			</div>
+			<div class="content-bot">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-4 col-xs-12">
+							<img src="img/HN.jpg" alt="Pho HN">
+							<p>Phở bò HN  là món ăn không chỉ được người Việt Nam tôn vinh là món ăn đặc sản mà được cả thế giới biết đến aiaisdofios divodvo</p>
+						</div>
+						<div class="col-sm-4 col-xs-12">
+							<img src="img/HN.jpg" alt="Pho HN">
+							<p>Phở bò HN  là món ăn không chỉ được người Việt Nam tôn vinh là món ăn đặc sản mà được cả thế giới biết đến aiaisdofios divodvo</p>
+						</div>
+						<div class="col-sm-4 col-xs-12">
+							<img src="img/HN.jpg" alt="Pho HN">
+							<p>Phở bò HN  là món ăn không chỉ được người Việt Nam tôn vinh là món ăn đặc sản mà được cả thế giới biết đến aiaisdofios divodvo</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</article>
+	</section>
+	<section class="map">
+		<article class="container">
+			<div>
+				<span class="text-transform">Where we are</span>
+			</div>
+			<img src="img/map.jpg" alt="map">
+		</article>
+	</section>
+	<!-- map -->
+	<section class="top">
+		<article class="top-rated">
+			<div class="container">
+				<span><a href="#">* TOP RATED DESTINATION</a></span>
+				<div class="row">
+					<div class="col-sm-4 col-xs-12">
+						<span>TP Ho Chi Minh</span>
+						<img src="img/Top/HCM.jpg" alt="HCM">
+					</div>
+					<div class="col-sm-4 col-xs-12">
+						<span>Ha Noi</span>
+						<img src="img/Top/HN.jpg" alt="HN">
+					</div>
+					<div class="col-sm-4 col-xs-12">
+						<span>Da Nang</span>
+						<img src="img/Top/DN.jpg" alt="DN">
+					</div>
+					<div class="col-sm-4 col-xs-12">
+						<span>Lao Cai</span>
+						<img src="img/Top/LC.jpg" alt="LC">
+					</div>
+					<div class="col-sm-4 col-xs-12">
+						<span>Da Lat</span>
+						<img src="img/Top/DL.jpg" alt="DL">
+					</div>
+					<div class="col-sm-4 col-xs-12">
+						<span>Vung Tau</span>
+						<img src="img/Top/VT.jpg" alt="VT">
+					</div>
+				</div>
+			</div>
+		</article>
+		<article class="top-rated">
+			<div class="container">
+				<span><a href="#">* TOP RATED HOSTS</a></span>
+				<div class="row">
+					<div class="col-sm-4 col-xs-12">
+						<img src="img/Top/HOT.jpg" alt="HOT">
+						<p>Lorem Ipsum is simply dummy text of the printingand typesetting industry</p>
+					</div>
+					<div class="col-sm-4 col-xs-12">
+						<img src="img/Top/HOT.jpg" alt="HOT">
+						<p>Lorem Ipsum is simply dummy text of the printingand typesetting industry</p>
+					</div>
+					<div class="col-sm-4 col-xs-12">
+						<img src="img/Top/HOT.jpg" alt="HOT">
+						<p>Lorem Ipsum is simply dummy text of the printingand typesetting industry</p>
+					</div>
+					<div class="col-sm-4 col-xs-12">
+						<img src="img/Top/HOT.jpg" alt="HOT">
+						<p>Lorem Ipsum is simply dummy text of the printingand typesetting industry</p>
+					</div>
+					<div class="col-sm-4 col-xs-12">
+						<img src="img/Top/HOT.jpg" alt="HOT">
+						<p>Lorem Ipsum is simply dummy text of the printingand typesetting industry</p>
+					</div>
+					<div class="col-sm-4 col-xs-12">
+						<img src="img/Top/HOT.jpg" alt="HOT">
+						<p>Lorem Ipsum is simply dummy text of the printingand typesetting industry</p>
+					</div>
+				</div>
+			</div>
+		</article>
+		<article class="content">
+			<div class="container">
+				<div class="content-nd">
+					<p>Traveler Review from April 3. 2017 </p>
+					<p>“ We had a wonderful time with Putu,.Wayan and Kadek, learning  We had a wonderful time with Putu,.Wayan and Kadek, learning We had a wonderful time with Putu,.Wayan and Kadek, learning We had a wonderful time with Putu,.Wayan and Kadek, learning We had a wonderful time with Putu,.Wayan and Kadek, learning We had a wonderful time with Putu,.Wayan and Kadek, learning We had a wonderful <strong>time with Putu,.Wayan and Kadek, learning </strong>"</p>
+				</div>
+			</div>
+		</article>
+	</section>
+	<!-- End top -->
+	<footer class="container">
+		<div class="row">
+			<div class="col-sm-4 col-xs-6">
+				<p>COMPANY INFO</p>
+				<ul class="fl-left">
+					<li><a href="#">> About</a></li>
+					<li><a href="#">> Founders</a></li>
+					<li><a href="#">> How it works</a></li>
+					<li><a href="#">> Safety</a></li>
+				</ul>
+				<ul class="fl-right">
+					<li><a href="#">> Press</a></li>
+					<li><a href="#">> Careers</a></li>
+					<li><a href="#">> Testmonials</a></li>
+					<li><a href="#">> Contact</a></li>
+				</ul>
+			</div>
+			<div class="col-sm-5 col-xs-6">
+				<ul class="fl-left">
+					<p href="#">HELP?</p>
+					<li><a href="#">> Traveler FAQs</a></li>
+					<li><a href="#">> Host FAQs</a></li>
+				</ul>
+				<ul class="fl-right">
+					<p href="#">JOIN US</p>
+					<li><a href="#">> Become a Host </a></li>
+					<li><a href="#">> Become an Ambassador</a></li>
+				</ul>
+			</div>
+			<div class="col-sm-3 col-xs-12">
+				<p>SUBSCRIBE TO OUR NEWSLETTER!</p>
+				<p><a href="#">Enter Email Adress</a></p>
+			</div>
+		</div>
+	</footer>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+</body>
+</html>

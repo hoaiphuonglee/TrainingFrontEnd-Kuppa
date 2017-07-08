@@ -1,0 +1,37 @@
+body {
+	background-image: url(../../img/user.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.form-horizontal {
+  margin-top: 150px;
+  border: 1px solid #848484;
+  background: rgba(223, 223, 223, 0.81)
+}
+.form-horizontal h2 {
+	text-align: center;
+	color: #172395;
+	font-size: 55px;
+}
+.social-buttons a:first-child {
+  background-color: #3b5998;
+  color: #fff;
+  display: inline-flex;
+}
+.social-buttons a:last-child {
+  color: #fff;
+  background-color:#55acee;
+   display: inline-flex;
+}
+@media screen and (max-width: 767px)
+{
+  .btn-default {
+    width: 100%;
+  }
+  .fb-gl {
+    text-align: center;
+  }
+  .form-horizontal {
+  margin-top: 0px;
+}
+}
